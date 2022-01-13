@@ -59,6 +59,7 @@ public class Distance : MonoBehaviour {
         {
             distanceText2.text = "Finish!";
             distanceText1.text = "Finish!";
+            Invoke("Delay", 2);
             draw.SetActive(true);
         }
         else if (distance1 <= 0)
@@ -73,6 +74,7 @@ public class Distance : MonoBehaviour {
         {
             distanceText2.text = "Finish!";
             winp2.SetActive(true);
+            Invoke("Delay", 2);
             P1Control.PausePlayer();
         }
 
